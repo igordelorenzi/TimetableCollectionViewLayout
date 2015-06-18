@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E106ADD1B330C6200554F74 /* WeekDayCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E106ADC1B330C6200554F74 /* WeekDayCollectionViewCell.m */; };
+		5E106ADF1B3313B600554F74 /* WeekDayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E106ADE1B3313B600554F74 /* WeekDayCollectionViewCell.xib */; };
+		5E106AE11B33151600554F74 /* EventCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E106AE01B33151600554F74 /* EventCollectionViewCell.xib */; };
+		5E106AE41B33153700554F74 /* EventCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E106AE31B33153700554F74 /* EventCollectionViewCell.m */; };
 		5E45D2141B3201340029B420 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E45D2131B3201340029B420 /* main.m */; };
 		5E45D2171B3201340029B420 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E45D2161B3201340029B420 /* AppDelegate.m */; };
 		5E45D21A1B3201340029B420 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E45D2191B3201340029B420 /* ViewController.m */; };
@@ -14,6 +18,7 @@
 		5E45D21F1B3201340029B420 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E45D21E1B3201340029B420 /* Images.xcassets */; };
 		5E45D2221B3201340029B420 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E45D2201B3201340029B420 /* LaunchScreen.xib */; };
 		5E45D22E1B3201340029B420 /* TimetableCollectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E45D22D1B3201340029B420 /* TimetableCollectionViewTests.m */; };
+		5E45D2391B320E5F0029B420 /* TimetableCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E45D2381B320E5F0029B420 /* TimetableCollectionViewLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +32,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E106ADB1B330C6200554F74 /* WeekDayCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekDayCollectionViewCell.h; sourceTree = "<group>"; };
+		5E106ADC1B330C6200554F74 /* WeekDayCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekDayCollectionViewCell.m; sourceTree = "<group>"; };
+		5E106ADE1B3313B600554F74 /* WeekDayCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeekDayCollectionViewCell.xib; sourceTree = "<group>"; };
+		5E106AE01B33151600554F74 /* EventCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCollectionViewCell.xib; sourceTree = "<group>"; };
+		5E106AE21B33153700554F74 /* EventCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventCollectionViewCell.h; sourceTree = "<group>"; };
+		5E106AE31B33153700554F74 /* EventCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventCollectionViewCell.m; sourceTree = "<group>"; };
 		5E45D20E1B3201340029B420 /* TimetableCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimetableCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E45D2121B3201340029B420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E45D2131B3201340029B420 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +51,8 @@
 		5E45D2271B3201340029B420 /* TimetableCollectionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimetableCollectionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E45D22C1B3201340029B420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E45D22D1B3201340029B420 /* TimetableCollectionViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimetableCollectionViewTests.m; sourceTree = "<group>"; };
+		5E45D2371B320E5F0029B420 /* TimetableCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimetableCollectionViewLayout.h; sourceTree = "<group>"; };
+		5E45D2381B320E5F0029B420 /* TimetableCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimetableCollectionViewLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,12 +94,17 @@
 		5E45D2101B3201340029B420 /* TimetableCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				5E45D2151B3201340029B420 /* AppDelegate.h */,
-				5E45D2161B3201340029B420 /* AppDelegate.m */,
 				5E45D2181B3201340029B420 /* ViewController.h */,
 				5E45D2191B3201340029B420 /* ViewController.m */,
+				5E45D2371B320E5F0029B420 /* TimetableCollectionViewLayout.h */,
+				5E45D2381B320E5F0029B420 /* TimetableCollectionViewLayout.m */,
+				5E106ADB1B330C6200554F74 /* WeekDayCollectionViewCell.h */,
+				5E106ADC1B330C6200554F74 /* WeekDayCollectionViewCell.m */,
+				5E106ADE1B3313B600554F74 /* WeekDayCollectionViewCell.xib */,
+				5E106AE21B33153700554F74 /* EventCollectionViewCell.h */,
+				5E106AE31B33153700554F74 /* EventCollectionViewCell.m */,
+				5E106AE01B33151600554F74 /* EventCollectionViewCell.xib */,
 				5E45D21B1B3201340029B420 /* Main.storyboard */,
-				5E45D21E1B3201340029B420 /* Images.xcassets */,
 				5E45D2201B3201340029B420 /* LaunchScreen.xib */,
 				5E45D2111B3201340029B420 /* Supporting Files */,
 			);
@@ -96,6 +114,9 @@
 		5E45D2111B3201340029B420 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5E45D21E1B3201340029B420 /* Images.xcassets */,
+				5E45D2151B3201340029B420 /* AppDelegate.h */,
+				5E45D2161B3201340029B420 /* AppDelegate.m */,
 				5E45D2121B3201340029B420 /* Info.plist */,
 				5E45D2131B3201340029B420 /* main.m */,
 			);
@@ -199,8 +220,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E106ADF1B3313B600554F74 /* WeekDayCollectionViewCell.xib in Resources */,
 				5E45D21D1B3201340029B420 /* Main.storyboard in Resources */,
 				5E45D2221B3201340029B420 /* LaunchScreen.xib in Resources */,
+				5E106AE11B33151600554F74 /* EventCollectionViewCell.xib in Resources */,
 				5E45D21F1B3201340029B420 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,7 +244,10 @@
 			files = (
 				5E45D21A1B3201340029B420 /* ViewController.m in Sources */,
 				5E45D2171B3201340029B420 /* AppDelegate.m in Sources */,
+				5E106AE41B33153700554F74 /* EventCollectionViewCell.m in Sources */,
+				5E45D2391B320E5F0029B420 /* TimetableCollectionViewLayout.m in Sources */,
 				5E45D2141B3201340029B420 /* main.m in Sources */,
+				5E106ADD1B330C6200554F74 /* WeekDayCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +442,7 @@
 				5E45D2331B3201340029B420 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E45D2341B3201340029B420 /* Build configuration list for PBXNativeTarget "TimetableCollectionViewTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +451,7 @@
 				5E45D2361B3201340029B420 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

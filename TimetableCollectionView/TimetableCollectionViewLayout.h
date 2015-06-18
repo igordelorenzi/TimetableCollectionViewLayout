@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TimetableCollectionView.h
 //  TimetableCollectionView
 //
 //  Created by Igor Andrade on 6/17/15.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface TimetableCollectionViewLayout : UICollectionViewLayout
 
 @end
-
