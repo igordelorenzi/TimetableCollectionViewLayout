@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wEX-jx-g1f">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Quadro de Horários-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -13,34 +13,136 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" directionalLockEnabled="YES" bounces="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="oBa-oV-XAa">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wkS-44-Lzz" customClass="TimetableCollectionViewLayout">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
-                                <connections>
-                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="0Ee-dz-510"/>
-                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="EnP-Sl-zsh"/>
-                                </connections>
-                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MgK-y3-dOY" userLabel="Tab Container">
+                                <rect key="frame" x="0.0" y="64" width="600" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3p-qG-qpf">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="40"/>
+                                        <color key="backgroundColor" red="0.44705882352941179" green="0.72156862745098038" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Grade de Horários">
+                                            <color key="titleColor" red="0.1647058824" green="0.41568627450000001" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uu-z6-adU">
+                                        <rect key="frame" x="300" y="0.0" width="300" height="40"/>
+                                        <color key="backgroundColor" red="0.44705882349999998" green="0.72156862749999995" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Detalhes das Disciplinas">
+                                            <color key="titleColor" red="0.16470588235294117" green="0.41568627450980394" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="5uu-z6-adU" firstAttribute="leading" secondItem="R3p-qG-qpf" secondAttribute="trailing" id="0RH-g6-8Vh"/>
+                                    <constraint firstAttribute="trailing" secondItem="5uu-z6-adU" secondAttribute="trailing" id="0TZ-Ue-an5"/>
+                                    <constraint firstAttribute="bottom" secondItem="R3p-qG-qpf" secondAttribute="bottom" id="5qA-CY-tYw"/>
+                                    <constraint firstItem="R3p-qG-qpf" firstAttribute="leading" secondItem="MgK-y3-dOY" secondAttribute="leading" id="9aB-Kc-7kE"/>
+                                    <constraint firstItem="R3p-qG-qpf" firstAttribute="top" secondItem="MgK-y3-dOY" secondAttribute="top" id="Dpf-sU-WoP"/>
+                                    <constraint firstItem="5uu-z6-adU" firstAttribute="top" secondItem="MgK-y3-dOY" secondAttribute="top" id="QOU-ef-bXl"/>
+                                    <constraint firstAttribute="bottom" secondItem="5uu-z6-adU" secondAttribute="bottom" id="UUw-R0-CmN"/>
+                                    <constraint firstAttribute="height" constant="40" id="lee-NS-uZQ"/>
+                                    <constraint firstItem="R3p-qG-qpf" firstAttribute="width" secondItem="5uu-z6-adU" secondAttribute="width" id="mEj-3S-WSU"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JOb-SE-x6o" userLabel="Collection View Container">
+                                <rect key="frame" x="0.0" y="104" width="600" height="496"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Atualizado em 30/04/2015" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBo-FX-OQA" customClass="RightPadding10UILabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
+                                        <color key="backgroundColor" red="0.88627450980392153" green="0.92941176470588238" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="R4f-Lm-xP0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.1647058824" green="0.41568627450000001" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="oBa-oV-XAa">
+                                        <rect key="frame" x="0.0" y="30" width="600" height="466"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wkS-44-Lzz" customClass="TimetableCollectionViewLayout">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="vXZ-lx-hvc" id="0Ee-dz-510"/>
+                                            <outlet property="delegate" destination="vXZ-lx-hvc" id="EnP-Sl-zsh"/>
+                                        </connections>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="oBa-oV-XAa" secondAttribute="bottom" id="DXG-fQ-ub5"/>
+                                    <constraint firstItem="sBo-FX-OQA" firstAttribute="leading" secondItem="JOb-SE-x6o" secondAttribute="leading" id="LXc-os-Isj"/>
+                                    <constraint firstItem="sBo-FX-OQA" firstAttribute="top" secondItem="JOb-SE-x6o" secondAttribute="top" id="Q4S-ey-WSJ"/>
+                                    <constraint firstItem="oBa-oV-XAa" firstAttribute="leading" secondItem="JOb-SE-x6o" secondAttribute="leading" id="YRO-sc-EfA"/>
+                                    <constraint firstItem="oBa-oV-XAa" firstAttribute="top" secondItem="sBo-FX-OQA" secondAttribute="bottom" id="aDd-ni-bbi"/>
+                                    <constraint firstAttribute="trailing" secondItem="sBo-FX-OQA" secondAttribute="trailing" id="qs0-cD-ef4"/>
+                                    <constraint firstAttribute="trailing" secondItem="oBa-oV-XAa" secondAttribute="trailing" id="xaz-KM-Dfb"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MgK-y3-dOY" secondAttribute="trailing" id="4t3-R4-0z7"/>
+                            <constraint firstItem="JOb-SE-x6o" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="7dz-wo-PpP"/>
+                            <constraint firstItem="JOb-SE-x6o" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="8P8-oY-ytl"/>
+                            <constraint firstItem="JOb-SE-x6o" firstAttribute="top" secondItem="MgK-y3-dOY" secondAttribute="bottom" id="AFU-Cq-t5G"/>
+                            <constraint firstAttribute="trailing" secondItem="JOb-SE-x6o" secondAttribute="trailing" id="MJN-ee-cOT"/>
+                            <constraint firstAttribute="trailing" secondItem="MgK-y3-dOY" secondAttribute="trailing" id="O5D-AN-PV8"/>
+                            <constraint firstItem="JOb-SE-x6o" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="RwN-l1-38a"/>
+                            <constraint firstItem="JOb-SE-x6o" firstAttribute="top" secondItem="MgK-y3-dOY" secondAttribute="bottom" constant="-2" id="Wpw-Up-Pwm"/>
+                            <constraint firstItem="MgK-y3-dOY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="XER-MC-40Q"/>
+                            <constraint firstItem="MgK-y3-dOY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="e2A-EN-VRO"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="MgK-y3-dOY" secondAttribute="bottom" constant="496" id="gVX-TE-Kqm"/>
+                            <constraint firstItem="MgK-y3-dOY" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="sCF-ZT-hA0"/>
+                            <constraint firstItem="JOb-SE-x6o" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="38" id="vNf-eI-Ham"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="O5D-AN-PV8"/>
+                                <exclude reference="XER-MC-40Q"/>
+                                <exclude reference="RwN-l1-38a"/>
+                                <exclude reference="Wpw-Up-Pwm"/>
+                                <exclude reference="vNf-eI-Ham"/>
+                                <exclude reference="gVX-TE-Kqm"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationItem key="navigationItem" title="Quadro de Horários" id="nud-Wq-KOX"/>
                     <connections>
                         <outlet property="collectionView" destination="oBa-oV-XAa" id="bbD-lP-DLH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="126" y="332"/>
+            <point key="canvasLocation" x="691" y="314"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wZb-K1-KR6">
+            <objects>
+                <navigationController id="wEX-jx-g1f" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ncf-SU-lNE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="qdq-rm-brV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ohk-d0-xVQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="314"/>
         </scene>
     </scenes>
 </document>

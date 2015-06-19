@@ -33,7 +33,7 @@ static NSString *eventCellIdentifier = @"EventCellIdentifier";
 #pragma mark - UICollectionViewDataSource protocol methods
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 50;
+    return 30;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {

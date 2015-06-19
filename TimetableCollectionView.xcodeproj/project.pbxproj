@@ -19,6 +19,7 @@
 		5E45D2221B3201340029B420 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E45D2201B3201340029B420 /* LaunchScreen.xib */; };
 		5E45D22E1B3201340029B420 /* TimetableCollectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E45D22D1B3201340029B420 /* TimetableCollectionViewTests.m */; };
 		5E45D2391B320E5F0029B420 /* TimetableCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E45D2381B320E5F0029B420 /* TimetableCollectionViewLayout.m */; };
+		5EEC1AA71B33AB0C00DEE149 /* RightPadding10UILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEC1AA61B33AB0C00DEE149 /* RightPadding10UILabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		5E45D22D1B3201340029B420 /* TimetableCollectionViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimetableCollectionViewTests.m; sourceTree = "<group>"; };
 		5E45D2371B320E5F0029B420 /* TimetableCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimetableCollectionViewLayout.h; sourceTree = "<group>"; };
 		5E45D2381B320E5F0029B420 /* TimetableCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimetableCollectionViewLayout.m; sourceTree = "<group>"; };
+		5EEC1AA51B33AB0C00DEE149 /* RightPadding10UILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightPadding10UILabel.h; sourceTree = "<group>"; };
+		5EEC1AA61B33AB0C00DEE149 /* RightPadding10UILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightPadding10UILabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 				5E45D21B1B3201340029B420 /* Main.storyboard */,
 				5E45D2201B3201340029B420 /* LaunchScreen.xib */,
 				5E45D2111B3201340029B420 /* Supporting Files */,
+				5EEC1AA51B33AB0C00DEE149 /* RightPadding10UILabel.h */,
+				5EEC1AA61B33AB0C00DEE149 /* RightPadding10UILabel.m */,
 			);
 			path = TimetableCollectionView;
 			sourceTree = "<group>";
@@ -245,6 +250,7 @@
 				5E45D21A1B3201340029B420 /* ViewController.m in Sources */,
 				5E45D2171B3201340029B420 /* AppDelegate.m in Sources */,
 				5E106AE41B33153700554F74 /* EventCollectionViewCell.m in Sources */,
+				5EEC1AA71B33AB0C00DEE149 /* RightPadding10UILabel.m in Sources */,
 				5E45D2391B320E5F0029B420 /* TimetableCollectionViewLayout.m in Sources */,
 				5E45D2141B3201340029B420 /* main.m in Sources */,
 				5E106ADD1B330C6200554F74 /* WeekDayCollectionViewCell.m in Sources */,
