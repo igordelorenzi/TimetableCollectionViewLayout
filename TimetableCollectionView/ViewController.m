@@ -13,6 +13,8 @@
 @interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UIButton *timetableTabButton;
+@property (weak, nonatomic) IBOutlet UIButton *courseDetailTabButton;
 
 @end
 
