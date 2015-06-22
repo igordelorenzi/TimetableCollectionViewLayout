@@ -7,15 +7,16 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WeekDayCellIdentifier" id="gTV-IL-0wX" customClass="WeekDayCollectionViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="91" height="40"/>
+            <rect key="frame" x="0.0" y="0.0" width="120" height="40"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="91" height="40"/>
+                <rect key="frame" x="0.0" y="0.0" width="120" height="40"/>
                 <subviews>
-                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mar-15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0r-kt-fGI">
-                        <rect key="frame" x="0.0" y="0.0" width="91" height="40"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0r-kt-fGI">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="40"/>
+                        <color key="backgroundColor" red="0.14509803921568629" green="0.46274509803921571" blue="0.6588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -29,11 +30,11 @@
                 <constraint firstItem="h0r-kt-fGI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kjj-Qy-ooF"/>
                 <constraint firstAttribute="bottom" secondItem="h0r-kt-fGI" secondAttribute="bottom" id="tx6-Th-cVG"/>
             </constraints>
-            <size key="customSize" width="118" height="50"/>
+            <size key="customSize" width="131" height="50"/>
             <connections>
                 <outlet property="weekDayLabel" destination="h0r-kt-fGI" id="BcY-jh-sph"/>
             </connections>
-            <point key="canvasLocation" x="261.5" y="376"/>
+            <point key="canvasLocation" x="268" y="376"/>
         </collectionViewCell>
     </objects>
 </document>

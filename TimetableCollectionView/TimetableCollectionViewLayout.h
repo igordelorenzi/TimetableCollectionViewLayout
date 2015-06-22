@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TimetableCollectionViewLayout : UICollectionViewLayout
+@protocol TimetableCollectionViewLayoutDelegate <UICollectionViewDelegate>
+@optional
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath;
+- (NSInteger)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout zIndexForItemAtIndexPath:(NSIndexPath *)indexPath;
+@end
 
+@interface TimetableCollectionViewLayout : UICollectionViewLayout
+@property (nonatomic, weak) IBOutlet NSObject<TimetableCollectionViewLayoutDelegate> *delegate;
 @end

@@ -30,9 +30,9 @@ CGSize contentSize;
         return;
     }
     
-    if (! numberOfColumns) {
-        numberOfColumns = [self.collectionView numberOfItemsInSection:0];
-    }
+//    if (! numberOfColumns) {
+//        numberOfColumns = [self.collectionView numberOfItemsInSection:0];
+//    }
     
     // Redesenha os items da primeira linha e a primeira coluna para coincidirem com o conteúdo
     // da Collection View.
@@ -40,18 +40,21 @@ CGSize contentSize;
     if (itemAttributes != nil && itemAttributes.count > 0) {
         // Itera sobre todos os items (de linha em linha, partindo da esq. p/ dir.)
         for (NSInteger section = 0; section < self.collectionView.numberOfSections; section++) {
-            for (NSInteger index = 0; index < numberOfColumns; index++) {
+            for (NSInteger index = 0; index < [self.collectionView numberOfItemsInSection:section]; index++) {
                 if (section != 0 && index != 0) {
                     continue;
                 }
                 
                 NSIndexPath *indexPath = [NSIndexPath indexPathForItem:index inSection:section];
                 UICollectionViewLayoutAttributes *attributes = [self layoutAttributesForItemAtIndexPath:indexPath];
+                CGSize itemSize = [self.delegate collectionView:self.collectionView layout:self sizeForItemAtIndexPath:indexPath];
                 
                 // Fixa primeira linha
                 if (section == 0) {
                     CGRect frame = attributes.frame;
                     frame.origin.y = self.collectionView.contentOffset.y;
+                    frame.size.height = itemSize.height;
+                    frame.size.width = itemSize.width;
                     attributes.frame = frame;
                 }
                 
@@ -59,6 +62,8 @@ CGSize contentSize;
                 if (index == 0) {
                     CGRect frame = attributes.frame;
                     frame.origin.x = self.collectionView.contentOffset.x;
+                    frame.size.height = itemSize.height;
+                    frame.size.width = itemSize.width;
                     attributes.frame = frame;
                 }
             }
@@ -67,9 +72,9 @@ CGSize contentSize;
         return;
     }
     
-    if (itemsSize == nil || itemsSize.count != numberOfColumns) {
-        [self calculateItensSize];
-    }
+//    if (itemsSize == nil || itemsSize.count != numberOfColumns) {
+//        [self calculateItensSize];
+//    }
     
     NSInteger column = 0;
     CGFloat xOffset = 0;
@@ -80,18 +85,22 @@ CGSize contentSize;
     // Itera sobre todos os items (de linha em linha, partindo da esq. p/ dir.)
     for (NSInteger section = 0; section < self.collectionView.numberOfSections; section++) {
         NSMutableArray *sectionAttributes = [NSMutableArray array];
-        for (NSInteger index = 0; index < numberOfColumns; index++) {
-            CGSize itemSize = [(NSValue *)itemsSize[index] CGSizeValue];
+        for (NSInteger index = 0; index < [self.collectionView numberOfItemsInSection:section]; index++) {
+//            CGSize itemSize = [(NSValue *)itemsSize[index] CGSizeValue];
             NSIndexPath *indexPath = [NSIndexPath indexPathForItem:index inSection:section];
+            CGSize itemSize = [self.delegate collectionView:self.collectionView layout:self sizeForItemAtIndexPath:indexPath];
             UICollectionViewLayoutAttributes *attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
             
             attributes.frame = CGRectIntegral(CGRectMake(xOffset, yOffset, itemSize.width, itemSize.height));
+            attributes.zIndex = [self.delegate collectionView:self.collectionView layout:self zIndexForItemAtIndexPath:indexPath];
+//            if (section == 0 && index == 0) {
+//                attributes.zIndex = 1024;
+//            } else if (section == 0 || index == 0) {
+//                attributes.zIndex = 1023;
+//                NSLog(@"section: %ld - index: %ld", section, index);
+//            }
             
-            if (section == 0 && index == 0) {
-                attributes.zIndex = 1024;
-            } else if (section == 0 || index == 0) {
-                attributes.zIndex = 1023;
-            }
+            NSLog(@"attributes.zIndex: %ld", attributes.zIndex);
             
             if (section == 0) {
                 CGRect frame = attributes.frame;
@@ -104,7 +113,7 @@ CGSize contentSize;
             xOffset += itemSize.width;
             column++;
             
-            if (column == numberOfColumns) {
+            if (column == [self.collectionView numberOfItemsInSection:section]) {
                 if (xOffset > contentWidth) {
                     contentWidth = xOffset;
                 }
@@ -159,6 +168,7 @@ CGSize contentSize;
 }
 
 // return YES to cause the collection view to requery the layout for geometry information
+// return YES chama o prepareLayout quando o usuario mexe a tela
 - (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds {
     return YES;
 }
