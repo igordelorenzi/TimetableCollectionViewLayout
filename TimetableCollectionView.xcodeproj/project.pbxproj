@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E0536061B3857C400CA34E2 /* TimeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0536041B3857C400CA34E2 /* TimeCollectionViewCell.m */; };
+		5E0536071B3857C400CA34E2 /* TimeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E0536051B3857C400CA34E2 /* TimeCollectionViewCell.xib */; };
 		5E106ADD1B330C6200554F74 /* WeekDayCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E106ADC1B330C6200554F74 /* WeekDayCollectionViewCell.m */; };
 		5E106ADF1B3313B600554F74 /* WeekDayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E106ADE1B3313B600554F74 /* WeekDayCollectionViewCell.xib */; };
 		5E106AE11B33151600554F74 /* EventCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E106AE01B33151600554F74 /* EventCollectionViewCell.xib */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E0536031B3857C400CA34E2 /* TimeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimeCollectionViewCell.h; path = ../TimeCollectionViewCell.h; sourceTree = "<group>"; };
+		5E0536041B3857C400CA34E2 /* TimeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeCollectionViewCell.m; path = ../TimeCollectionViewCell.m; sourceTree = "<group>"; };
+		5E0536051B3857C400CA34E2 /* TimeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TimeCollectionViewCell.xib; path = ../TimeCollectionViewCell.xib; sourceTree = "<group>"; };
 		5E106ADB1B330C6200554F74 /* WeekDayCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekDayCollectionViewCell.h; sourceTree = "<group>"; };
 		5E106ADC1B330C6200554F74 /* WeekDayCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekDayCollectionViewCell.m; sourceTree = "<group>"; };
 		5E106ADE1B3313B600554F74 /* WeekDayCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeekDayCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -107,6 +112,9 @@
 				5E106ADB1B330C6200554F74 /* WeekDayCollectionViewCell.h */,
 				5E106ADC1B330C6200554F74 /* WeekDayCollectionViewCell.m */,
 				5E106ADE1B3313B600554F74 /* WeekDayCollectionViewCell.xib */,
+				5E0536031B3857C400CA34E2 /* TimeCollectionViewCell.h */,
+				5E0536041B3857C400CA34E2 /* TimeCollectionViewCell.m */,
+				5E0536051B3857C400CA34E2 /* TimeCollectionViewCell.xib */,
 				5E106AE21B33153700554F74 /* EventCollectionViewCell.h */,
 				5E106AE31B33153700554F74 /* EventCollectionViewCell.m */,
 				5E106AE01B33151600554F74 /* EventCollectionViewCell.xib */,
@@ -232,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E106ADF1B3313B600554F74 /* WeekDayCollectionViewCell.xib in Resources */,
+				5E0536071B3857C400CA34E2 /* TimeCollectionViewCell.xib in Resources */,
 				5E45D21D1B3201340029B420 /* Main.storyboard in Resources */,
 				5E45D2221B3201340029B420 /* LaunchScreen.xib in Resources */,
 				5E106AE11B33151600554F74 /* EventCollectionViewCell.xib in Resources */,
@@ -256,6 +265,7 @@
 				5E45D21A1B3201340029B420 /* ViewController.m in Sources */,
 				5E45D2171B3201340029B420 /* AppDelegate.m in Sources */,
 				5EF3636C1B34562F008AD563 /* NavViewController.m in Sources */,
+				5E0536061B3857C400CA34E2 /* TimeCollectionViewCell.m in Sources */,
 				5E106AE41B33153700554F74 /* EventCollectionViewCell.m in Sources */,
 				5EEC1AA71B33AB0C00DEE149 /* RightPadding10UILabel.m in Sources */,
 				5E45D2391B320E5F0029B420 /* TimetableCollectionViewLayout.m in Sources */,
