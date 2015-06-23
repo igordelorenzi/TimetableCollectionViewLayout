@@ -20,7 +20,7 @@
 		5E45D21F1B3201340029B420 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E45D21E1B3201340029B420 /* Images.xcassets */; };
 		5E45D2221B3201340029B420 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E45D2201B3201340029B420 /* LaunchScreen.xib */; };
 		5E45D22E1B3201340029B420 /* TimetableCollectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E45D22D1B3201340029B420 /* TimetableCollectionViewTests.m */; };
-		5E45D2391B320E5F0029B420 /* TimetableCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E45D2381B320E5F0029B420 /* TimetableCollectionViewLayout.m */; };
+		5E45D2391B320E5F0029B420 /* TTCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E45D2381B320E5F0029B420 /* TTCollectionViewLayout.m */; };
 		5EEC1AA71B33AB0C00DEE149 /* RightPadding10UILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEC1AA61B33AB0C00DEE149 /* RightPadding10UILabel.m */; };
 		5EF3636C1B34562F008AD563 /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF3636B1B34562F008AD563 /* NavViewController.m */; };
 /* End PBXBuildFile section */
@@ -58,8 +58,8 @@
 		5E45D2271B3201340029B420 /* TimetableCollectionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimetableCollectionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E45D22C1B3201340029B420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E45D22D1B3201340029B420 /* TimetableCollectionViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimetableCollectionViewTests.m; sourceTree = "<group>"; };
-		5E45D2371B320E5F0029B420 /* TimetableCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimetableCollectionViewLayout.h; sourceTree = "<group>"; };
-		5E45D2381B320E5F0029B420 /* TimetableCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimetableCollectionViewLayout.m; sourceTree = "<group>"; };
+		5E45D2371B320E5F0029B420 /* TTCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTCollectionViewLayout.h; sourceTree = "<group>"; };
+		5E45D2381B320E5F0029B420 /* TTCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTCollectionViewLayout.m; sourceTree = "<group>"; };
 		5EEC1AA51B33AB0C00DEE149 /* RightPadding10UILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightPadding10UILabel.h; sourceTree = "<group>"; };
 		5EEC1AA61B33AB0C00DEE149 /* RightPadding10UILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightPadding10UILabel.m; sourceTree = "<group>"; };
 		5EF3636A1B34562F008AD563 /* NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
@@ -107,8 +107,8 @@
 			children = (
 				5E45D2181B3201340029B420 /* ViewController.h */,
 				5E45D2191B3201340029B420 /* ViewController.m */,
-				5E45D2371B320E5F0029B420 /* TimetableCollectionViewLayout.h */,
-				5E45D2381B320E5F0029B420 /* TimetableCollectionViewLayout.m */,
+				5E45D2371B320E5F0029B420 /* TTCollectionViewLayout.h */,
+				5E45D2381B320E5F0029B420 /* TTCollectionViewLayout.m */,
 				5E106ADB1B330C6200554F74 /* WeekDayCollectionViewCell.h */,
 				5E106ADC1B330C6200554F74 /* WeekDayCollectionViewCell.m */,
 				5E106ADE1B3313B600554F74 /* WeekDayCollectionViewCell.xib */,
@@ -268,7 +268,7 @@
 				5E0536061B3857C400CA34E2 /* TimeCollectionViewCell.m in Sources */,
 				5E106AE41B33153700554F74 /* EventCollectionViewCell.m in Sources */,
 				5EEC1AA71B33AB0C00DEE149 /* RightPadding10UILabel.m in Sources */,
-				5E45D2391B320E5F0029B420 /* TimetableCollectionViewLayout.m in Sources */,
+				5E45D2391B320E5F0029B420 /* TTCollectionViewLayout.m in Sources */,
 				5E45D2141B3201340029B420 /* main.m in Sources */,
 				5E106ADD1B330C6200554F74 /* WeekDayCollectionViewCell.m in Sources */,
 			);

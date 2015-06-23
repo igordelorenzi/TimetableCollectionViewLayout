@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>70A0DF4E-EE0F-4287-951C-F95FDFEC18DE</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>TimetableCollectionView</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>A5DE0CB749AEEBFD7F58978815F2D8E27EC170B6</key>
 		<string>https://github.com/igordelorenzi/TimetableCollectionViewLayout.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TimetableCollectionView.xcodeproj/project.xcworkspace</string>
+	<string>TimetableCollectionView.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>A5DE0CB749AEEBFD7F58978815F2D8E27EC170B6</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>A5DE0CB749AEEBFD7F58978815F2D8E27EC170B6</string>
 			<key>IDESourceControlWCCName</key>
-			<string>TimetableCollectionView</string>
+			<string>TimetableCollectionViewLayout</string>
 		</dict>
 	</array>
 </dict>
