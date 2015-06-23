@@ -13,7 +13,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEMINARIOS INTEGRADOS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ys7-oy-BCy">
-                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                        <rect key="frame" x="0.0" y="0.0" width="119" height="119"/>
                         <color key="backgroundColor" red="0.44705882349999998" green="0.72156862749999995" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -23,12 +23,10 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="ys7-oy-BCy" secondAttribute="trailing" id="bEJ-Qf-Pmv"/>
+                <constraint firstAttribute="trailing" secondItem="ys7-oy-BCy" secondAttribute="trailing" constant="1" id="bEJ-Qf-Pmv"/>
                 <constraint firstItem="ys7-oy-BCy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cUe-8o-dAF"/>
                 <constraint firstItem="ys7-oy-BCy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dQg-7F-BkZ"/>
-                <constraint firstAttribute="bottom" secondItem="ys7-oy-BCy" secondAttribute="bottom" id="de2-H1-Kdc"/>
-                <constraint firstAttribute="centerY" secondItem="ys7-oy-BCy" secondAttribute="centerY" id="pUy-Fo-GDT"/>
-                <constraint firstAttribute="centerX" secondItem="ys7-oy-BCy" secondAttribute="centerX" id="y25-XP-Woc"/>
+                <constraint firstAttribute="bottom" secondItem="ys7-oy-BCy" secondAttribute="bottom" constant="1" id="de2-H1-Kdc"/>
             </constraints>
             <size key="customSize" width="146" height="157"/>
             <connections>
